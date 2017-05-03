@@ -1,5 +1,10 @@
 # End to End Testing Project for Web Frontend
 
+## Project Purpose
+1.	Skeleton project that enables Product Owners to write BDD style unit tests.
+2.	Technically the project demos how tests can be run as part of a continuous integration process running on gitlab. XVFB enables browsers to be run in the CI environment.
+
+
 ## Run project locally
 	npm install
 	npm run test-chrome
@@ -12,13 +17,6 @@
 	npm install chromedriver --save-dev        // chrome driver
 	npm install geckodriver --save-dev         //firefox driver
 	npm install selenium-webdriver --save-dev  //safari driver
-	
-## Reading
-	Cucumber examples:
-		http://nodeqa.io/post/bdd-with-nightwatchjs-and-cucumberjs
-    	http://blog.js-republic.com/introduction-to-nightwatch-for-lightning-acceptance-tests/
-		https://github.com/mucsi96/nightwatch-cucumber
-		https://github.com/mucsi96/nightwatch-cucumber/blob/master/examples/simple-example/nightwatch.conf.js
 
 
 
