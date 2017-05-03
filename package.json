@@ -1,0 +1,25 @@
+{
+  "name": "e2e-node-nightwatch",
+  "version": "0.0.1",
+  "description": "end to end tests for web frontend",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/nightwatch",
+    "test-chrome": "./node_modules/.bin/nightwatch --env chrome",
+    "test-firefox": "./node_modules/.bin/nightwatch --env firefox",
+    "test-safari": "./node_modules/.bin/nightwatch --env safari",
+    "test-parallel": "./node_modules/.bin/nightwatch --env chrome,firefox"
+  },
+  "author": "briankelly",
+  "license": "ISC",
+  "devDependencies": {
+    "chromedriver": "2.29.0",
+    "cucumber": "^2.0.0-rc.9",
+    "geckodriver": "^1.6.1",
+    "nightwatch": "0.9.14",
+    "nightwatch-cucumber": "^7.1.2",
+    "phantomjs-prebuilt": "^2.1.14",
+    "selenium-server-standalone-jar": "3.4.0",
+    "selenium-webdriver": "3.4.0"
+  }
+}

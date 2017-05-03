@@ -1,0 +1,21 @@
+image: "bkco/docker-nightwatch-xvfb:0.0.1"
+
+stages:
+  - "chrome-tests"
+
+before_script:
+  - "apt-get update"
+  - "apt-get install -y wget bzip2"
+  - "npm install"
+
+cache:
+  paths:
+    - node_modules/
+
+run-tests-on-chrome:
+  stage: "chrome-tests"
+  script:
+    - "whereis xvfb-run"
+    - "xvfb-run --server-args='-screen 0 1600x1200x24' nightwatch -e chrome"
+  only:
+    - "master@bkco/e2e-web-tests"
